@@ -1,11 +1,10 @@
 'use client';
 import React from 'react';
 import AddToCart from '../AddToCart';
-import styles from './UserCard.module.css';
 
 const UserCard = () => {
     return (
-        <div className={styles.card}>
+        <div className='p-5 bg-sky-200 text-white text-xl hover:bg-sky-400'>
             <AddToCart/>
         </div>
     )
