@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import UserCard from './components/UserCard/UserCard'
+import NavBar from './components/NavBar'
+import Overview from './components/Overview'
+
 export default function Home() {
   return (
-    <main>
-      <h1>hello world</h1>
-
-      <Link href="/users">users</Link>
-      <UserCard/>
+    <main className='h-screen flex flex-col  sm:flex sm:flex-row'>
+      <NavBar/>
+      <Overview/>
     </main>
   )
 }
