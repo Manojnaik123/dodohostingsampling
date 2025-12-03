@@ -1,9 +1,16 @@
 import React from 'react'
 
-const Card = () => {
+interface ChildElementProps {
+    text: string;
+}
+
+const Card: React.FC<ChildElementProps> = ({
+    text,
+}) => {
+
     return (
-        <div className='flex flex-auto  border border-black border-solid rounded'>
-            <p>hello</p>
+        <div className='flex flex-col flex-auto border border-black border-solid rounded'>
+            <p className='text-black flex flex-auto'>{text}</p>
         </div>
     )
 }
